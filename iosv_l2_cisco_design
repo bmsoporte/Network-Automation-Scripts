@@ -1,0 +1,11 @@
+spanning-tree mode rapid-pvst
+ip default-gateway 172.16.10.1
+
+vlan 100
+name automated_vlan
+exit
+interface range ethernet 0/2-3
+ switchport mode access
+ switchport access vlan 100
+ shutdown
+ no shutdown
